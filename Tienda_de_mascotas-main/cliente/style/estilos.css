@@ -1,0 +1,581 @@
+.texto2{
+    position: absolute;
+    width: 75%;
+    left: 250px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.padre{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    
+}
+
+.imagentitulo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;  
+    top: 0;
+    left: 36%;
+   width: 500px;
+   justify-content: center;   
+  
+   position: absolute;
+}
+
+
+.tituloprincipal2 {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecera2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*
+
+* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    ;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #00721e;
+    /* Black*/
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav img {
+    float: right;
+    background-color: none
+    ;
+    color: #f2f2f2;
+}
+
+
+.ig iframe {
+    border: 8px solid;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+
+.contig{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tituloig {
+    border: solid 3px black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    color: #faf8f8;
+    background-color: #00a74b;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center; 
+    align-items: center;
+    text-shadow: 3px  3px 5px #00721e,
+    1px  0px 0px rgb(0, 0, 0),
+    0px  1px 0px rgb(0, 0, 0),
+    0px  0px 10px rgb(0, 0, 0);
+
+
+}
+
+.ig{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.columna {
+    background: rgb(245, 10, 206);
+    border: 10px solid #ff1007;
+    color: rgb(255, 255, 255);
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 21px;
+    border-radius: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topna {
+    float: left;
+
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.topnavD {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #000 solid 3px;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 100%;
+    border: solid 2px black;
+}
+
+/* Change the color of links on hover */
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #af4c4c;
+    color: white;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+a svg {
+    transition: all .5s ease;
+
+    &:hover {
+        #transform: rotate(180deg);
+    }
+}
+
+#ico {
+    display: none;
+}
+
+.menu {
+    background: #000;
+    display: none;
+    padding: 5px;
+    width: 320px;
+    @include border-radius(5px);
+
+    #transition: all 0.5s ease;
+
+    a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 10px 2px;
+        margin: 3px 0;
+        text-decoration: none;
+        background: #444;
+
+        &:nth-child(1) {
+            margin-top: 0;
+            @include border-radius(3px 3px 0 0);
+        }
+
+        &:nth-child(5) {
+            margin-bottom: 0;
+            @include border-radius(0 0 3px 3px);
+        }
+
+        &:hover {
+            background: #555;
+        }
+    }
+}
+
+.contenedor {
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    background-color: black;
+    border-radius: 15px;
+    margin: 3% auto;
+    z-index: -1;
+}
+
+.imagen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.imagen img {
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.texto {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 85%;
+    color: white;
+    font-weight: bold;
+}
+
+.contenedor a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.siguiente {
+    left: 100%;
+}
+
+.boton {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+}
+
+.puntos {
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    text-align: center;
+}
+
+.punto {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.punto:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.contenedor a:hover {
+    color: gray;
+}
+
+.actual {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+}
+
+.activo {
+    background-color: gray;
+}
+
+footer {
+    background-color: #00721e;
+    color: #fcfbfb;
+    padding: 30px;
+    text-align: center;
+    border-top: black solid 3px;
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: url(../img/image.png) repeat 0 0 ;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+}
+
+
+.cardBox:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    background: #222;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+
+.card p {
+    margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+}
+
+.card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+    
+}
+
+.card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #ff0c0c;
+    height: 502px;
+}
+
+.cardBox:nth-child(1) .card .back {
+    background: cornflowerblue;
+    height: 350px;
+}
+
+.cardBox:nth-child(2) .card .back {
+    background: orange;
+    height: 350px;
+}
+
+.cardBox:nth-child(3) .card .back {
+    background: yellowgreen;
+    height: 350px;
+}
+
+.cardBox:nth-child(4) .card .back {
+    background: tomato;
+    height: 350px;
+}
+
+.cardBox:nth-child(5) .card .back {
+    background: rgb(71, 129, 255);
+    height: 350px;
+}
+
+.cardBox:nth-child(6) .card .back {
+    background: rgb(203, 71, 255);
+    height: 350px;
+}
+.cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+}
+
+
+.cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cardBox {
+        margin-left: 2.8%;
+        margin-top: 3%;
+        width: 46%;
+    }
+
+    .card {
+        height: 285px;
+    }
+
+    .cardBox:last-child {
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardBox {
+        width: 94.5%;
+    }
+
+    .card {
+        height: 260px;
+    }
+}
+
+.boxesContainer img{
+    width: 320px;
+    height: 290px;
+}
+
+
+.boxesContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+     
+ }
+
+.tituloproddes {
+
+    width: 1400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    color: #faf8f8;
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-bottom: 40px;
+    text-align: center; 
+    align-items: center;
+
+}
+
+.mapa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.facebook img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
